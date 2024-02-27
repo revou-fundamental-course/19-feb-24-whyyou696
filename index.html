@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="body">
+    <header>
+        <img src="assets/img/Logo.png" alt="Logo" width="60px" height="60px">
+        <ul class="navigation">
+            <b>
+                <li class="navigation1"><a href="#home">Home</a></li>
+                <li class="navigation2"><a href="#our-headquarter">Our Profile</a></li>
+                <li class="navigation3"><a href="#message-us">Message Us</a></li>
+            </b>
+        </ul>
+    </header>
+    
+    <div class="subheader">
+        <h2 id="home">Hi <span id="namaHeader"></span>, Welcome To My Website</h2>
+    </div>
+    <p>Ini adalah halaman pertama website saya.</p>
+    
+    <hr>
+    <div class="subheader" id="our-headquarter">
+        <h2>Our Headquarter</h2>
+    </div>
+    <div class="our-headquarter">
+        <div>
+            <div class="circle-image" style="background-image: url('assets/img/jakarta.jpg');"></div>
+            <h5 class="name-headquarter">Jakarta</h5 class="name-headquarter">
+        </div>
+        <div>
+            <div class="circle-image" style="background-image: url('assets/img/bandung.jpg');"></div>
+            <h5 class="name-headquarter">Bandung</h5>
+        </div>
+        <div>
+            <div class="circle-image" style="background-image: url('assets/img/Malang.jpg');"></div>
+            <h5 class="name-headquarter">Malang</h5>
+        </div>
+    </div>
+
+    <hr>
+    <div class="subheader" id="message-us">
+        <h2>Message Us</h2>
+    </div>
+<div class="inquiry-box">
+    <form name="message-form" onsubmit="return validateForm()" class="inquiry-form">
+        <label for="namaLengkap">Nama:</label>
+        <input type="text" name="namaLengkap" id="namaLengkap" placeholder="Nama Lengkap" />
+        <br />
+        <label for="tglLahir">Tanggal Lahir:</label>
+        <input type="date" name="tglLahir" id="tglLahir" />
+        <br />
+        <label>Jenis Kelamin:</label>
+        <label for="male">Laki-Laki</label>
+        <input type="radio" id="male" name="jenis" value="Laki-Laki" />
+        <label for="female">Perempuan</label>
+        <input type="radio" id="female" name="jenis" value="Perempuan" />
+        <br />
+        <label for="pesan">Pesan:</label>
+        <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+    <div class="output">
+        <p>Nama : <span id="namaPengirim"></span></p>
+        <p>Tanggal Lahir : <span id="tglLahirPengirim"></span></p>
+        <p>Jenis Kelamin : <span id="jenisPengirim"></span></p>
+        <p>Pesan : <span id="pesanPengirim"></span></p>
+    </div>
+</div>
+<!-- JS -->
+<script src="js/script.js"></script>
+
+<footer>
+    Created By RevoU
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    background-color: rgba(165, 165, 165, 0.05);
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    animation: fadeInUp 1s ease-out;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h2, h5 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: black;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    margin-left: 15px;
+}
+
+.navigation {
+    list-style-type: none;
+}
+
+.navigation1 {
+    display: flex;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    scale: 1.5
+}
+
+.navigation2 {
+    display: flex;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    scale: 1.5
+}
+
+.navigation3 {
+    display: flex;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    scale: 1.5
+}
+.navigation1:hover {
+    background-color: rgba(165, 165, 165, 0.5);
+    border-radius: 20px;
+    color: black
+}
+.navigation2:hover {
+    background-color: rgba(165, 165, 165, 0.5);
+    border-radius: 20px;
+    color: black
+}
+.navigation3:hover {
+    background-color: rgba(165, 165, 165, 0.5);
+    border-radius: 20px;
+    color: black
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Animation for our-headquarter */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.our-headquarter {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Apply the animation */
+}
+
+
+.name-headquarter {
+    text-align: center;
+    margin-left: 60px;
+    color: black;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: rotate 2s linear infinite; /* Apply the animation */
+}
+
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid whitesmoke;
+    border-style: inherit;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inquiry-box {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+.inquiry-form {
+    display: inline-block;
+    flex-direction: column;
+    color: black;
+}
+
+.inquiry-form label {
+    display: grid;    
+}
+
+.output {
+    border: 1px solid black ;
+    border-style: inset;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    margin-right: 100px;
+}
+
+footer {
+    position: fixed;
+    right: 0px;
+    bottom: 0;
+    width: calc(100% - 20px); /* Mengurangi lebar footer untuk memberikan ruang bagi scroll bar */
+    background-color: rgba(165, 165, 165, 0.05);
+    color: black;
+    padding: 10px;
+    text-align: right; /* Membuat teks footer menjadi rata kiri */
+    font-size: 14px;
+    margin-left: 10px; /* Memberikan margin kiri agar tidak tertutup oleh scroll bar */
+}
